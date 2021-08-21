@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUS TICKET BOOKING form</title>
+    
+    <style>
+		.align{
+			align:center;
+		}
+		.grad1 {
+			height: 700px;
+			background-color: red; 
+			background-image: linear-gradient(315deg,#F6BB45, #D10000);
+			border-radius:20px;
+			color:white;
+		}
+		
+		.container{
+			margin: 10px 50px 50px 50px;
+		}						
+    </style>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #F7F8FA;">
+        <a class="navbar-brand" href="#"><h4>Bus Karle !</h4>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="float:right;"></span>
+        </button>
+        </a>
+  
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="Bus_Karle.html"><b>Home </b><span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <b>Booking</b>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Book Now !</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="update_search.php">Edit Booking</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="delete_search.php">Cancel Booking</a>
+              </div>
+            </li>
+          </ul>
+  
+        </div>
+    </nav>
+
+    <div class="container grad1 text-center">
+
+        <form action="booking.php" method="POST">
+            <div class ="Booking-form-box">
+                <h3 class="header" ><u>BOOKING:</u></h3>
+
+                <!------inputst----->
+                <div id="input">
+                    <div class="form-row">
+                        <div class="col">
+                            <label><h5>Source: </h5></label>
+                            <select class="form-control form-control-sm" name ="Source" value=""required>
+                                <option value="">SOURCE LOCATION(All city)</option>
+                                <option value="Mumbai">MUMBAI</option>
+                                <option value="Goa">GOA</option>
+                                <option value="Visakhapantnam">VISAKHAPANTNAM</option>
+                                <option value="Bengaluru">BENGALURU</option>
+                                <option value="Chennai">CHENNAI</option>
+                                <option value="Ooty">OOTY</option>
+                                <option value="Srinagar">SRINAGAR</option>
+                                <option value="Udhampur">UDHAMPUR</option>
+                                <option value="Delhi">DELHI</option>
+                                <option value="Leh">LEH</option>
+                                <option value="Jaipur">JAIPUR</option>
+                                <option value="Jaisalmer">JAISALMER</option>
+                                <option value="Manali">MANALI</option>
+                                <option value="Leh">LEH</option>
+                                <option value="Guwati">GUWATI</option>
+                                <option value="Tawang">TAWANG</option>
+                                <option value="Shimla">SHIMLA</option>
+                                <option value="Manali">MANALI</option>
+                                <option value="Chennai">CHENNAI</option>
+                                <option value="Mummar">MUMMAR</option>
+                                <option value="Gujarat">GUJARAT</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label><h5>Destination:</h5></label>
+                            <select class="form-control form-control-sm" name ="Destn" value=""required>
+                                <option value="">DESTINATION LOCATION(All city)</option>
+                                <option value="Mumbai">MUMBAI</option>
+                                <option value="Goa">GOA</option>
+                                <option value="Visakhapantnam">VISAKHAPANTNAM</option>
+                                <option value="Bengaluru">BENGALURU</option>
+                                <option value="Chennai">CHENNAI</option>
+                                <option value="Ooty">OOTY</option>
+                                <option value="Srinagar">SRINAGAR</option>
+                                <option value="Udhampur">UDHAMPUR</option>
+                                <option value="Delhi">DELHI</option>
+                                <option value="Leh">LEH</option>
+                                <option value="Jaipur">JAIPUR</option>
+                                <option value="Jaisalmer">JAISALMER</option>
+                                <option value="Manali">MANALI</option>
+                                <option value="Leh">LEH</option>
+                                <option value="Guwati">GUWATI</option>
+                                <option value="Tawang">TAWANG</option>
+                                <option value="Shimla">SHIMLA</option>
+                                <option value="Manali">MANALI</option>
+                                <option value="Chennai">CHENNAI</option>
+                                <option value="Mummar">MUMMAR</option>
+                                <option value="Gujarat">GUJARAT</option>
+                            </select>
+                        </div>
+                    </div>
+
+                            <br>
+                    <div class="form-row">
+                        <div class="col">
+                            <label><h5>Bus: </h5></label>
+                            <select class="form-control form-control-sm" id="input-grp" name ="Bus" value=""required>
+                                <option value="">Preferred Bus</option>
+                                <option value="F-21">F-21</option>
+                                <option value="Electra-2">Electra-2</option>
+                                <option value="Eco-s">Eco-S</option>
+                                <option value="eCitaro G">eCitaro G</option>
+                            </select>
+                        </div>    
+                        <div class="col">
+                            <label><h5>Class: </h5></label>
+                            <select class="form-control form-control-sm" id="input-grp" name="Class">
+                                <option value=""> Preferred class</option>
+                                <option value="General">GENERAL</option>
+                                <option value="AC">AC</option>
+                                <option value="NON-AC">NON-AC</option>
+                                <option value="SLEEPERS">SLEEPERS</option>
+                            </select>
+                        </div>
+                    </div>  
+
+                        <br>
+                    <div id="input2">
+                        <div class="form-row align-items-center">
+                            <div class="col-md-4 mb-3">
+                                <label for="inlineFormInput"><h5>No. of Adults:</h5></label>
+                                <input type="number" name="Adult" class="form-control mb-2" id="inlineFormInput" placeholder=" Adult " required>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="inlineFormInput"><h5>No. of Childrens:</h5></label>
+                                <input type="number" name="Child" class="form-control mb-2" id="inlineFormInput" placeholder=" Childrens " required>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="inlineFormInput"><h5>No. of Uchilds:</h5></label>
+                                <input type="number" name="Uchild" class="form-control mb-2" id="inlineFormInput" placeholder=" Child under 2 " required>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!---input3st--->
+                <div id="input3" class="form-row align-items-center"">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div style="border: 5px solid #DEBA4E; border-style: groove;border-radius:5px ;">
+                        <div class="form-check form-check-inline">
+                            <h5>Trip:</h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input class="form-check-input" type="radio" name="Way" id="exampleRadios1" value="1" required>
+                            <label class="form-check-label" for="exampleRadios1">
+                                <h5>One Way</h5>
+                            </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input class="form-check-input" type="radio" name="Way" id="exampleRadios1" value="2" required>
+                            <label class="form-check-label" for="exampleRadios1">
+                                <h5>Round Trip</h5>
+                            </label>
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class="form-group row" >
+                        <div class="col-md-6">
+                            <label for="example-date-input" class="col-form-label"><b>From-Date:</b></label>
+                            <div >
+                            <input class="form-control" type="date" name="From-D" id="example-date-input" placeholder="MM/DD/YYYY">
+                            </div>
+                        </div>                            
+                        <div class="col-md-6">    
+                            <label for="example-date-input" class="col-form-label"><b>To-Date:</b></label>
+                            <div >
+                            <input class="form-control" type="date" name="To-D" id="example-date-input" placeholder="MM/DD/YYYY">
+                            </div>
+                        </div>                            
+                    </div>
+                </div>
+                <!---input4end-->
+
+                <hr class="my-4">
+                
+                <h3><u> PERSONAL DETAILS:</u></h3>
+
+                <div class="form-row align-items-center">
+                    <div class="col-md-4 mb-3">
+                        <label for="inlineFormInput"><h5>Name:</h5></label>
+                        <input type="text" name="Fna" class="form-control mb-2" id="inlineFormInput" placeholder=" First Middle Last " required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="inlineFormInput"><h5>Phone:</h5></label>
+                        <input type="number" name="Contact" class="form-control mb-2" id="inlineFormInput" placeholder="1234567890" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="inlineFormInputGroup"><h5>Email:</h5></label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">@</div>
+                            </div>
+                            <input type="email" name="Email" class="form-control" id="inlineFormInputGroup" placeholder="yourmail@gmail.com" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!----input7st-->
+                <div id="input7">
+                    <button type="submit" class="btn btn-primary" id="booknow" name="book" value="Book Now" ><h5>BOOK NOW</h5></button>
+                </div>
+
+
+            </div>
+        </form>
+    </div>
+<!--
+    <script type="text/javascript">
+        $('#booknow').click(function() {
+			window.open('mypayment.html');
+		});
+    </script>
+-->
+</body>
+
+</html>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/4d75de00a8.js" crossorigin="anonymous"></script>
+	
+	<!--font google api-->
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Lobster&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="neon_but_style.css">
+	
+	<style>
+		
+		.jumbotron{
+			background-image:url(New_background.jpg);
+			background-size:100%;
+			height: 100vh;
+			text-align:center;
+			margin: 0 auto;
+			color:white;
+		}
+		
+		#main-container2{
+			margin: 10px 50px 50px 50px;
+			height: 100vh;
+			background-image: linear-gradient(180deg,white, red);
+			border-radius:50px;
+		}
+		
+		.card-columns {
+			@include media-breakpoint-only(lg) {
+				column-count: 3;
+			}
+			@include media-breakpoint-only(xl) {
+				column-count: 3;
+			}
+		}
+		
+		#main-container-why{
+			margin: 10px 50px 50px 50px;
+		}
+		
+		#main-container2.5{
+			margin: 10px 50px 50px 50px;
+			height: 100vh;
+		}
+		
+		.tips{
+			color: black;
+			background-image: url("tips.png");
+			background-color: #cccccc;
+			background-position: center;  
+  			background-repeat: no-repeat; 
+  			background-size: cover;
+			background-blend-mode: lighten;
+			padding-bottom: 6px;
+		}
+		
+		#main-container3{
+			background-color: #07EAFF;
+			height: 100vh;
+		}
+		
+		.in-main-3{
+			width: 80%;
+			height: 50%;
+			top: 25%;
+			margin: 0 auto;
+			position: relative;
+		}
+		
+		#grad1 {
+			height: 100vh;
+			background-color: red; 
+			/*background-image: linear-gradient(315deg,#F6BB45, #18AA99);*/
+			background-image: url("banner.jpg");
+			background-blend-mode: darken;
+			border-radius:50px;
+		}
+		
+		.bg1{
+			background-image: linear-gradient(180deg,white, red);
+			font-family: 'Libre Baskerville', serif;
+			font-weight: bold;
+		}
+		
+	</style>
+	
+  </head>
+  
+  <body>
+	
+	<div class="alert alert-warning alert-dismissible fade show" role="alert">
+	  <strong><i>COVID-19 alert ! Travel Safe.</i></strong> <a href="https://www.worldometers.info/coronavirus/" class="alert-link">(Checkout Worldometer here)</a>
+	  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		<span aria-hidden="true">&times;</span>
+	  </button>
+	</div>
+	
+	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #F7F8FA;">
+	  <a class="navbar-brand" href="#"><h4>Bus Karle !</h4>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon" style="float:right;"></span>
+	  </button>
+	  </a>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+		  <li class="nav-item active">
+			<a class="nav-link" href="#main-container1"><b>Home </b><span class="sr-only">(current)</span></a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#main-container2"><b>Our Buses</b></a>
+		  </li>
+		  <li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			  <b>Booking</b>
+			</a>
+			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			  <a class="dropdown-item" id="book" >Book Now !</a>
+			  <div class="dropdown-divider"></div>
+			  <a class="dropdown-item" id="update" >Edit Booking</a>
+			  <div class="dropdown-divider"></div>
+			  <a class="dropdown-item" id="delete" >Cancel Booking</a>
+			</div>
+		  </li>
+		  <li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			  <b>Download the app</b>
+			</a>
+			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			  <a class="dropdown-item" href="#main-container3">Download from Playstore</a>
+			  <div class="dropdown-divider"></div>
+			  <a class="dropdown-item" href="#main-container3">Download from Appstore</a>
+			</div>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" id="about-us" href="#"><b>About</b></a>
+		  </li>
+          <li class="nav-item">
+			<a class="nav-link" id="analysis" href="#"><b>Analysis</b></a>
+		  </li>
+		</ul>
+		<form class="form-inline my-2 my-lg-0">
+		  <button class="btn btn-outline-danger my-2 my-sm-0" id="login-but" type="submit"><b>Register</b></button>
+		</form
+
+	  </div>
+	</nav>
+	
+	<div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+		<div id="main-container1">
+			
+			<div class="jumbotron jumbotron-fluid" id="grad1">
+				<div class="container">
+					<input type="image" src="newlogo1.png"/> 
+					<h1><b>Bus Karle !</b></h1>
+					<p class="lead">Travel with your comfort.</p>
+					<hr class="my-4">
+					<p>Want to know more ? Join our mailing list.</p>
+                    <div class="neon_but">
+						<button type="submit" id="home_book" class="btn btn-lg">
+							<b>BOOK NOW !</b>
+						</button>
+					</div>
+				</div>
+			
+			</div>
+			
+		</div>
+		<div id="main-container2" class="text-center">
+			
+			<h2>Some Of Our Highly Rated Buses</h2>
+			<p>Summary, once again, of your app's awesomeness</p>
+			<div class="row card-deck">
+				<div class="col-md-6 col-lg-4">
+					<div class="card h-100">
+						  <img src="futbus.jpg" class="card-img-top" alt="Card image cap">
+						  <div class="card-body">
+							<h5 class="card-title"><i class="fas fa-bus"></i>   F-21</h5>
+							<p class="card-text">It's a future design bus. Model F-21 provides full comfort for travelling with high end technology included in each part of Vehicle.</p>
+						  </div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<div class="card h-100">
+						  <img src="bluebus.jpg" class="card-img-top" alt="Card image cap">
+						  <div class="card-body">
+							<h5 class="card-title"><i class="fas fa-bus"></i>   Electra-2</h5>
+							<p class="card-text">Fully elecrical automated bus gives you amazing travel experience with comfort and home-living experience.</p>
+						  </div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<div class="card h-100">
+					  <img src="redbus.jpg" class="card-img-top" alt="Card image cap">
+					  <div class="card-body">
+						<h5 class="card-title"><i class="fas fa-bus"></i>   Eco-S-class</h5>
+						<p class="card-text">Eco-S-Class is S-class vehicle made specially to give highest comfort possible. Ethanol base fueling system makes it eco-friendly.</p>
+					  </div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div id="main-container-why" class="text-center">
+			<hr class="my-4">
+			
+			<div class="accordion" id="accordionExample">
+				  <div class="card">
+					<div class="card-header" id="headingOne">
+					  <h2 class="mb-0">
+						<button class="btn btn-block btn-dark text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						  <h5>Introduction -></h5>
+						</button>
+					  </h2>
+					</div>
+
+					<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+					  <div class="card-body bg1">
+						Comfortable and safely journey toward your destination during this COVID 19 is our main proiority.Our company is working 24*7 to provide one of the best service to our customer . We are following all the regulations and guidelines given by government. We have taken all the minute thing in our vision to provide best travel.
+					  </div>
+					</div>
+				  </div>
+				  <div class="card">
+					<div class="card-header" id="headingTwo">
+					  <h2 class="mb-0">
+						<button class="btn btn-block btn-dark text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						  <h5>Why To Choose Bus Karle ? -> </h5>
+						</button>
+					  </h2>
+					</div>
+					<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+					  <div class="card-body bg1">
+						<h4>The Best Way To Book Bus Tickets</h4>
+						Bus Karle helps you easily search, compare and book intercity bus tickets on a worldwide scale with our comprehensive list of bus routes and schedules. With several language and currency options available, Bus Karle seeks to cater to international bus travellers no matter where they are in the world. Bus Karle partners with safe and reliable bus companies throughout the world such as Greyhound, Eurolines, ALSA, OUIBUS (BlaBlaBus), National Express and many others so you can buy tickets without a worry.
+					  </div>
+					</div>
+				  </div>
+				  <div class="card">
+					<div class="card-header" id="headingThree">
+					  <h2 class="mb-0">
+						<button class="btn btn-block btn-dark text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						  <h5>Crew Responsibilities ! -></h5>
+						</button>
+					  </h2>
+					</div>
+					<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+					  <div class="card-body bg1" style="text-align:left;">
+							+ Buses will stop only at designated bus stops<br>
+							+ If a large number of passengers are noticed at any bus stop, the crew must inform the depot manager about the same.<br>
+							+ The driver, conductor and all other bus crew must wear face masks<br>
+							+ Crew will be allowed to board the bus only after their body temperature is checked<br>
+							+ Crew must use sanitizers
+					  </div>
+					</div>
+				  </div>
+			</div>
+			
+		</div>
+		
+		<div id="main-container2.5" class="text-center">
+			<hr class="my-4">
+			<div class="in-main-3 tips">
+				<p><h2>Tips to find cheap bus tickets</h2></p>
+				<p><h4>1. Book early</h4><br>
+				You can find the best bus tickets prices by <b>booking in advance</b>; the earlier you book your bus trip generally the cheaper your tickets will be!
+				</p>
+				<p><h4>2. Travel during off-peak hours</h4><br>
+				Summer and holiday periods are when bus tickets tend to be highest. These are still ideal times to travel and prices will reflect that. Traveling by bus gives you great flexibility. There are often multiple daily departures, so if you can be flexible with your travel dates or schedule, choosing an overnight bus or traveling mid-week instead of the weekend will help you save on transportation costs. If you can only travel on weekends, bear in mind that Sunday afternoon departures are usually the most expensive. If you can <b>leave on Sunday or Monday morning</b>, you might be able to save a few bucks on your bus tickets.
+				</p>
+				<p><h4>3. Find cheap bus tickets for 500rs.!</h4><br>
+				You’ve probably heard about 500rs. bus tickets – and they’re no myth. How can you find an intercity bus ride for just 500rs.? <b>Electra-2 and Eco-S-Class Bus</b> are known for their economical services and <b>offer bus tickets for as little as 500rs. at random</b> on some of their schedules, generally within the first handful of seats sold. To secure these seats, make sure you book early. The earlier you book your ticket, the greater your odds are of grabbing a seat for a 500rs..
+				</p>
+				<p><h4>4. Do your research</h4><br>
+				Much like airplane and train tickets prices, but ticket prices vary from one bus company to the next. Be sure to do your research and compare companies and prices. Busbud can help you do that as we’ve collected all the info you need and put it in one place, so <b>comparing prices, schedules, and providers</b> is a breeze. You can sort the results by price, departure time, and ticket types and compare what each bus company has to offer in a single search.
+				</p>
+				<p><h4>5. Choose your provider wisely</h4><br>
+				Some bus companies provide luxury services, while others like FlixBus offer a more budget-friendly service to take you from point A to point B at little cost. There are many bus companies that offer a wide range of services and prices. Depending on your travel style and budget, make sure that you <b>choose the bus company that fits your needs</b>.
+				</p>
+			</div>
+		</div>
+
+		<div id="main-container3" class="text-center">
+			<div class="in-main-3">
+				<h2>Download The App !</h2>
+				<p>Get this app on Playstore & Appstore<p>
+				<input type="image" src="rsz_playstore.png"/> 
+				<p></p>
+				<input type="image" src="app-store-icon.png"/>
+			</div>
+		</div>
+	</div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  
+	<script type="text/javascript">
+	
+		$('#exampleModal').on('show.bs.modal', function (event) {
+			var button = $(event.relatedTarget) // Button that triggered the modal
+			var recipient = button.data('name') // Extract info from data-* attributes
+			// If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+			// Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+			var modal = $(this)
+			modal.find('.modal-title').text('New message to ' + recipient)
+		})
+		
+		$("#exampleModal").on('hidden.bs.modal', function(event) {
+			alert("Modal is closed now !");
+		})
+		
+		$(function () {
+			$('[data-toggle="popover"]').popover()
+		})
+		
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip()
+		})
+		
+		$('#login-but').click(function() {
+			window.open('login.html');
+		});
+
+		$('#about-us').click(function() {
+			window.open('ind.html');
+		});
+
+        $('#analysis').click(function() {
+			window.open('pie_chart.php');
+		});
+		
+		$('#book').click(function() {
+			window.open('booking.html');
+		});
+
+		$('#update').click(function() {
+			window.open('update_search.php');
+		});
+
+		$('#delete').click(function() {
+			window.open('delete_search.php');
+		});
+
+        $('#home_book').click(function() {
+			window.open('booking.html');
+		});
+		
+	</script>
+  </body>
+
+</html>

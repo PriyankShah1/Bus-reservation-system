@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width-device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie-edge">
+<title>About US</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+	@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+	@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+	body{
+		background-image: linear-gradient(315deg,#F6BB45, #18AA99);
+	}
+	.team-area{
+		padding-top: 5%;
+	}
+	.single-team{
+		background-color: #000;
+		margin-bottom: 10px;
+	}
+	.single-team:hover .social{
+		cursor: pointer;
+		opacity: 1;
+		transform: rotateY(0deg) scale(1, 1);
+	}
+	.img-area{
+		overflow: hidden;
+		position: relative;
+	}
+	.img-area img{
+		width: 100%;
+	}
+	.img-area:hover img{
+		transform: scale(1.2)
+	}
+	.img-area img{
+		transition: all 0.4s ease 0s;
+	}
+	@media (max-width: 768px){
+		.img-area img{
+			display: inline-block;
+		}
+	}
+	.img-area .social{
+		background-color: rgba(0,0,0,0.7);
+		position: absolute;
+		text-align: center;
+		height: 100%;
+		width: 100%;
+		left: 0;
+		top: 0;
+		opacity: 0;
+		transition: .5s;
+		transform: rotateY(180deg) scale(0.5, 0.5);
+	}
+	.img-area .social ul{
+		text-align:center;
+		position: relative;
+		top: 175px;
+	}
+	.img-area .social ul li a{
+		border: 1px solid #fff;
+		color: #fff;
+		display: block;
+		font-size: 20px;
+		height: 40px;
+		width: 40px;
+		line-height: 40px;
+		text-align: center;
+	}
+	.img-area .social ul li a:hover{
+		background-color: #fff;
+		color: #000;
+		border: 1px solid transparent;
+	}
+	.img-text{
+		padding: 25px;
+		color: #fff;
+		text-align: center;
+	}
+	.img-text h4{
+		margin: 0 0 5px;
+		font-size: 30px;
+		font-family: bignoodletitling;
+		letter-spacing: 5px;
+	}
+	.img-text h5{
+		font-size: 15px;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	.heading {
+		font-size: 60px;
+		color: white;
+	}
+	.heading span {
+		font-style: italic;
+		font-size: 30px;
+	}
+	.img-wrap{width: 100%}
+	.img-wrap img{width: 100%;padding: 10px;border-radius: 50%;box-shadow: 0 0 10px #999999}
+
+	#aboutus h2{margin-bottom: 25px;font-size: 40px;text-align: left;}
+	#aboutus p{font-size: 16px;color: white;text-align:justify;}
+
+	.spon h1{
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	font-size: 50px;
+	}	
+	h1{
+	text-align: center;
+	}		
+	.center {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	#slide img{
+		justify-content: center;
+		align-items: center;
+	}
+	.slider{
+		background-color: white;
+		width: 960px;
+		height: 100px;
+		overflow: hidden;
+		position: relative;
+		margin: auto;
+		box-shadow: 0 10px 20px -5px rgba(0,0,0,0.5);
+	}
+	.slider::before,.slider::after{
+		content: '';
+		position: absolute;
+		width: 200px;
+		height: 100px;
+		background: linear-gradient(to right, white 0%, rgba(255,255,255,0) 100%);
+		z-index: 2;
+	}
+	.slider::after{
+		top: 0;
+		right: 0;
+		transform: rotateZ(180deg);
+	}
+
+	.slider .slider-track{
+		display: flex;
+		width: calc(250px * 14);
+		animation: scroll 40s infinite linear;
+	}
+	.slider .slide img{
+		width:  250px;
+		height: 100px;
+	}
+	@keyframes scroll{
+		0%{
+			transform: translateX(0%);
+		}
+		100%{
+			transform: translateX(calc(-250px * 7));
+		}
+	}
+		
+		
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="team-area">
+	   <div class="container">
+	   <h1 class="heading"><span>meet </color></span>Our Team</h1>
+	   <hr><br>
+	        <div class="row">
+			   <div class="col-md-4 col-sm-6 col-xs-12">
+			       <div class="single-team">
+				      <div class="img-area">
+					    <img src="p8.jpg" class="img-responsive" alt="">
+						   <div class="social">
+						       <ul class="list-inline">
+						          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							      <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+						        </ul>
+						   </div>
+					  </div>
+					  <div class="img-text">
+					      <h4>Nitiket Shinde</h4>
+					      <h5>Chief Technology Officer</h5>
+					  </div>
+				   </div>
+			   </div>
+			   
+			   <div class="col-md-4 col-sm-6 col-xs-12">
+			       <div class="single-team">
+				      <div class="img-area">
+					    <img src="p9.jpg" class="img-responsive" alt="">
+						   <div class="social">
+						       <ul class="list-inline">
+						          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							      <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+						        </ul>
+						   </div>
+					  </div>
+					  <div class="img-text">
+					      <h4>Deep Limbad</h4>
+					      <h5>Chief Executive Officer</h5>
+					  </div>
+				   </div>
+			   </div>
+			   
+			   <div class="col-md-4 col-sm-6 col-xs-12">
+			       <div class="single-team">
+				      <div class="img-area">
+					    <img src="pX.jpg" class="img-responsive" alt="">
+						   <div class="social">
+						       <ul class="list-inline">
+						          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							      <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+						        </ul>
+						   </div>
+					  </div>
+					  <div class="img-text">
+					      <h4>Priyank Shah</h4>
+					      <h5>Chief Marketing Officer</h5>
+					  </div>
+				   </div>
+			   </div>
+			  
+			
+			</div>	
+			<br><br>
+			<hr>
+		
+		</div>
+		
+    </div>
+	<br><br>
+	<section id="aboutus">
+	   <div class="container">
+            <div class="row">
+			 <div class="col-sm-7">
+			    <h2 style="color: white;"><b>Our System And Partners</b></h2><hr />
+				<p><b>Buskarle.com</b> build bus reservation system that offers a seamless ticket booking experience to
+				the passengers and easily connect them with the bus operators.</p>
+				<p>Our Partners are 'bluebus','BusPartnersLLC.com','redbus.in','bus.com.ng',bus.com,'Magic Bus' and many more.
+				This will help you reach your destination without compromising comfort zone.</p>
+				<p>Standing in a long queue to book a bus ticket is history now. Operators are now connecting with the top travel 
+				booking platforms to grow their travel business. We offer a white-labeled bus ticket booking app development solution 
+				to startups to create their own booking platform in this competitive marketplace. Passengers get the ease of booking 
+				a bus ticket from anywhere anytime with rich features like seat selection, price comparison, operator reviews, online
+				payments, and so much more.<br>
+                You as the platform admin can easily govern all the bus ticket booking activities and guide bus operators in organizing
+				routes, buses, ticket fares, seating structures, bus availability, etc. Our bus ticket booking customer app supports 
+				both iOS and Android platforms with strong backend.</p>
+			 </div>
+			<div class="col-sm-5">
+			   <div class="img-wrap">
+			    <img src="b1.jpg">	             		 
+			   </div>
+			 </div>
+			</div>	   
+	   </div>
+	</section>
+	<br><br>
+	<hr>
+	<br>
+	<div class="spon">
+	    <h1>Our Sponsors</h1>
+		<br>
+	</div>
+	<br><br>
+	<div class="slider">
+	   	<div class="slider-track">
+		
+	       	<div class="slide">
+	          <img src = "s11.jpg" alt="">
+	        </div>
+			
+			<div class="slide">
+	          <img src = "s2.png" alt="">
+	        </div>
+			
+			<div class="slide">
+	          <img src = "s3.png" alt="">
+	        </div>
+			
+			<div class="slide">
+	          <img src = "s4.jpg" alt="">
+	        </div>
+			
+			<div class="slide">
+	          <img src = "s5.jpg" alt="">
+	        </div>
+			
+			<div class="slide">
+	          <img src = "s6.jpg" alt="">
+	        </div>
+			
+			<div class="slide">
+	          <img src = "s11.jpg" alt="">
+	        </div>
+			
+			<div class="slide">
+	          <img src = "s2.png" alt="">
+	        </div>
+			
+			<div class="slide">
+	          <img src = "s3.png" alt="">
+	        </div>
+			
+			<div class="slide">
+	          <img src = "s4.jpg" alt="">
+	        </div>
+			
+			<div class="slide">
+	          <img src = "s5.jpg" alt="">
+	        </div>
+			
+			<div class="slide">
+	          <img src = "s6.jpg" alt="">
+	        </div>
+			
+	    </div>
+	</div>
+	<br><br><br><br><br><br>
+	</body>
+	</html>
